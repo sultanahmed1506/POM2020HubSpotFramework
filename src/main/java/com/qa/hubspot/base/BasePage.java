@@ -29,7 +29,7 @@ public class BasePage {
 	}
 
 	/**
-	 * Owner : Naveen Automation This method is used to initialize the WebDriver on
+	 * This method is used to initialize the WebDriver on
 	 * the basis of browserName
 	 * 
 	 * @param browserName
