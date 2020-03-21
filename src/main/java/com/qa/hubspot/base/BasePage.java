@@ -5,16 +5,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -32,8 +29,8 @@ public class BasePage {
 	}
 
 	/**
-	 * This method is used to initialize the WebDriver on the basis of
-	 * browserName
+	 * Owner : Naveen Automation This method is used to initialize the WebDriver on
+	 * the basis of browserName
 	 * 
 	 * @param browserName
 	 * @return this method will return driver instance
@@ -65,8 +62,8 @@ public class BasePage {
 
 	/**
 	 * 
-	 * @return this method returns properties - prop available in
-	 *         config.proerties file
+	 * @return this method returns properties - prop available in config.proerties
+	 *         file
 	 */
 	public Properties init_prop() {
 		prop = new Properties();
@@ -77,8 +74,7 @@ public class BasePage {
 			env = System.getProperty("env");
 			if (env == null) {
 				path = "./src/main/java/com/qa/hubspot/config/config.properties";
-			} 
-			else {
+			} else {
 				switch (env) {
 				case "qa":
 					path = "./src/main/java/com/qa/hubspot/config/config.qa.properties";
